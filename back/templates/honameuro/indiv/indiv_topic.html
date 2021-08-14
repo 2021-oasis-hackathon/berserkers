@@ -1,0 +1,14 @@
+<h2> 주제 "{{topic.topic}}"에 대한 페이지(3) </h2>
+<ol>
+    {% for indiv in indiv_list %}
+    <div>
+        <li><a href="{% url 'honameuro:indiv_detail' indiv.id %}">{{ indiv.title }}</a></li>
+        (최대 {{ indiv.max }}명 중에 {{ indiv.selected }}명이 신청중)
+    </div>
+    {% endfor %}
+</ol>
+
+<h3> 마음에 드시는 모임이 없나요?</h3>
+<li><a href="{% url 'honameuro:indiv_create' %}">모임 생성하기</a></li>
+
+

@@ -1,0 +1,9 @@
+<h2> INDIVIDUAL MAIN(2) </h2>
+<h3>지금 핫한 주제</h3>
+<ul>
+    {% for topic in topic_list %}
+    <li><a href="{% url 'honameuro:indiv_topic' topic.id %}"> {{ topic.topic }}</a></li>
+    {% endfor %}
+</ul>
+OR
+<a href="{% url 'honameuro:indiv_local' %}"> 마을 구경하기 </a>

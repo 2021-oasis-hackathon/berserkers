@@ -1,0 +1,10 @@
+<h2> 모임 매칭(9) </h2>
+
+매치 페이지입니다
+
+<ul>
+    {% for indiv in indiv_list %}
+    <li> {{ indiv.title }} <a href="{% url 'honameuro:match_detail' indiv.id %}"> 홍보하기</a></li>
+    {% endfor %}
+</ul>
+
