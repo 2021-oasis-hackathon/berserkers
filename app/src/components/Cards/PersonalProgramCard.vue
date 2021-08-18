@@ -23,7 +23,7 @@
         <div class="flex flex-col flex-1 flex-wrap">
           <div class="flex flex-1 flex-col px-3 my-2">
             <div id="title" class="font-bold text-2xs mb-2">{{ data.title }}</div>
-            <p id="description" class="text-gray-700 text-xs">
+            <p id="description" class="text-gray-700 text-sm">
               {{ data.description }}
             </p>
           </div>

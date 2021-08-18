@@ -26,7 +26,7 @@
               {{ data.location.region }}
             </div>
             <div id="title" class="font-bold text-2xs mb-1">{{ data.title }}</div>
-            <p id="description" class="text-gray-700 text-xs">
+            <p id="description" class="text-gray-700 text-sm">
               {{ data.description }}
             </p>
           </div>

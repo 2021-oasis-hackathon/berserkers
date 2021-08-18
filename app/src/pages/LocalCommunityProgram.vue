@@ -2,7 +2,7 @@
   <navbar content />
   <main>
     <section
-      class="header relative pt-16 items-center flex h-screen max-h-860-px"
+      class="header relative pt-16 items-center flex h-screen max-h-650-px border-b"
     >
       <div class="container mx-auto items-center flex flex-wrap">
         <div class="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
@@ -60,32 +60,108 @@
           -mt-48
           sm:mt-0
           w-10/12
-          max-h-860-px
+          max-h-650-px
         "
         :src="bannerImg"
         alt="..."
       />
     </section>
+    
+    <section class="pt-20 pb-48 bg-blueGray-100">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-flex-start mb-2">
+          <div class="w-full flex flex-row justify-between items-end px-4">
+            <h2 class="text-3xl font-semibold text-nowrap">
+              전남이 예술이랑께
+            </h2>
+          </div>
+        </div>
+        <div class="flex flex-wrap">
+          <!-- TODO: 아 인덱스로 키 잡으면 안되는데 시간없다 -->
+          <div v-for="(item, index) in localCommunityPrograms" :key="index" class="mt-4 mb-4 px-2 lg:w-3/12 md:w-4/12 sm:w-6/12" >
+            <local-community-program-card :item="item" />
+          </div>
+        </div>
+        <div class="flex flex-wrap justify-flex-start mt-12 mb-2">
+          <div class="w-full flex flex-row justify-between items-end px-4">
+            <h2 class="text-3xl font-semibold text-nowrap">
+              호남은 여러분들을 위해 열려 있습니다.
+            </h2>
+          </div>
+        </div>
+        <div class="flex flex-wrap">
+          <!-- TODO: 아 인덱스로 키 잡으면 안되는데 시간없다 -->
+          <div v-for="(item, index) in localCommunityPrograms" :key="index" class="mt-4 mb-4 px-2 lg:w-3/12 md:w-4/12 sm:w-6/12" >
+            <local-community-program-card :item="item" />
+          </div>
+        </div>
+
+        <div class="flex flex-wrap justify-flex-start mt-12 mb-2">
+          <div class="w-full flex flex-row justify-between items-end px-4">
+            <h2 class="text-3xl font-semibold text-nowrap">
+              청년들로 시나브로 호남이 활기차게
+            </h2>
+          </div>
+        </div>
+        <div class="flex flex-wrap">
+          <!-- TODO: 아 인덱스로 키 잡으면 안되는데 시간없다 -->
+          <div v-for="(item, index) in localCommunityPrograms" :key="index" class="mt-4 mb-4 px-2 lg:w-3/12 md:w-4/12 sm:w-6/12" >
+            <local-community-program-card :item="item" />
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   <footer-component />
 </template>
 <script>
+import { computed, ref, onMounted } from "vue";
+import { getAllLocalCommunityProgram } from "@/firebase";
+
 import Navbar from "@/components/Navbars/NavBar.vue";
 import FooterComponent from "@components/Footers/Footer.vue";
+import LocalCommunityProgramCard from "@components/Cards/LocalCommunityProgramCard.vue";
 
 import bannerImg from "@assets/images/banner002.jpg";
 import componentBtn from "@assets/img/component-btn.png";
 
+import useViewport from "@/hooks/useViewport.ts";
+
 export default {
-  data() {
+  setup() {
+    const { type } = useViewport();
+
+    const localCommunityPrograms = ref([]);
+
+    const carouselSize = computed(() => {
+      switch (type.value) {
+        case "xs":
+          return 1;
+        case "sm":
+          return 2;
+        case "md":
+          return 3;
+        case "lg":
+          return 4;
+      }
+    });
+
+    onMounted(async () => {
+      const _localCommunityPrograms = await getAllLocalCommunityProgram();
+      localCommunityPrograms.value = _localCommunityPrograms;
+    });
+
     return {
+      localCommunityPrograms,
       bannerImg,
       componentBtn,
+      carouselSize,
     };
   },
   components: {
     Navbar,
     FooterComponent,
+    LocalCommunityProgramCard,
   },
 };
 </script>
