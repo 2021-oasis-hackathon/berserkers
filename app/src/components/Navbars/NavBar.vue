@@ -36,7 +36,7 @@
             viewBox="0 0 50 50"
             width="70"
             height="70"
-            :iconColor="isScrollable ? 'rgba(0,0,0,1)' : 'rgba(255,255,255,1)'"
+            :iconColor="isScrollable ? 'rgba(5, 150, 105, 1)' : 'rgba(255,255,255,1)'"
             icon-name="logo"
           >
             <logo></logo>
