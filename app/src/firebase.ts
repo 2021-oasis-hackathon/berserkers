@@ -67,7 +67,7 @@ export const getPersonalProgram = async (id: string) => {
 
 export const getAllPersonalProgram = async () => {
     const program = await personalProgramsCollection.get();
-    return program.empty ? [] : program.docs.map(doc => doc.data());
+    return program.empty ? [] : program.docs.map(doc => { return {id: doc.id, ...doc.data()}});
 };
 
 export const updatePersonalProgram = (id: string, program: any) => {
