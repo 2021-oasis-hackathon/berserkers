@@ -18,7 +18,7 @@
             </p>
             <div class="mt-12">
               <a
-                href="https://github.com/creativetimofficial/vue-notus?ref=vn-index"
+                href=""
                 class="
                   github-star
                   ml-1
@@ -73,7 +73,7 @@
         <div class="flex flex-wrap justify-flex-start mb-2">
           <div class="w-full flex flex-row justify-between items-end px-4">
             <h2 class="text-3xl font-semibold text-nowrap">
-              전라북도에서 청년 창업 도전
+              취미 맞는 사람과 함께 떠나 볼까요?
             </h2>
           </div>
         </div>
@@ -86,7 +86,7 @@
         <div class="flex flex-wrap justify-flex-start mt-12 mb-2">
           <div class="w-full flex flex-row justify-between items-end px-4">
             <h2 class="text-3xl font-semibold text-nowrap">
-              다함께 호남에서 예술합시다!
+              바쁜 일상 속 힐링이 필요할 땐
             </h2>
           </div>
         </div>
@@ -100,7 +100,7 @@
         <div class="flex flex-wrap justify-flex-start mt-12 mb-2">
           <div class="w-full flex flex-row justify-between items-end px-4">
             <h2 class="text-3xl font-semibold text-nowrap">
-              우리와 호남으로 떠날래요?
+              마음이 따뜻해지는 봉사
             </h2>
           </div>
         </div>
