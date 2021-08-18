@@ -4,9 +4,9 @@
         "description": "한달동안 바닷가 게스트하우스를 운영해보세요!",
         "imgUrl": "https://images.unsplash.com/photo-1546661087-32e241801496?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80",
         "applicantCount": 0,
-        "max": 2,
+        "applicantMaxCount": 2,
         "deadlineDate": "2021-09-30",
-        "keyword": [
+        "keywords": [
             "힐링",
             "창업",
             "체험"
@@ -24,9 +24,9 @@
         "description": "선비들이 좋아했던 대나무와 차를 즐기며 선비의 삶을 체험해보세요.",
         "imgUrl": "https://images.unsplash.com/photo-1620870300436-a70b605f6ebe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
         "applicantCount": 3,
-        "max": 10,
+        "applicantMaxCount": 10,
         "deadlineDate": "2021-8-22",
-        "keyword": [
+        "keywords": [
             "힐링",
             "체험"
         ],
@@ -43,9 +43,9 @@
         "description": "군산 근대화 거리에서 큐레이터로 일하며 관광객들과 소통해볼 수 있는 기회!",
         "imgUrl": "https://images.unsplash.com/photo-1574338902008-c85b9047e7d5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
         "applicantCount": 2,
-        "max": 3,
+        "applicantMaxCount": 3,
         "deadlineDate": "2021-08-30",
-        "keyword": [
+        "keywords": [
             "체험",
             "창업"
         ],
@@ -62,9 +62,9 @@
         "description": "청년 농부가 되어 직접 농작물 키워보며 귀농 라이프 즐기기.",
         "imgUrl": "https://images.unsplash.com/photo-1537721664796-76f77222a5d0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
         "applicantCount": 8,
-        "max": 20,
+        "applicantMaxCount": 20,
         "deadlineDate": "2021-11-01",
-        "keyword": [
+        "keywords": [
             "체험",
             "농사"
         ],
@@ -81,9 +81,9 @@
         "description": "디자인을 좋아하는 사람들과 작업실 공유, 스터디 조직 및 전시 관람을 해 보세요!",
         "imgUrl": "https://images.unsplash.com/photo-1501366062246-723b4d3e4eb6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80",
         "applicantCount": 4,
-        "max": 8,
+        "applicantMaxCount": 8,
         "deadlineDate": "2021-09-10",
-        "keyword": [
+        "keywords": [
             "예술"
         ],
         "location": {
@@ -99,9 +99,9 @@
         "description": "광주과학관에서 열 과학 전시회를 기획해 보세요",
         "imgUrl": "https://images.unsplash.com/photo-1567427018141-0584cfcbf1b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
         "applicantCount": 2,
-        "max": 3,
+        "applicantMaxCount": 3,
         "deadlineDate": "2021-08-30",
-        "keyword": [
+        "keywords": [
             "예술",
             "체험"
         ],
@@ -118,9 +118,9 @@
         "description": "광주에서 지원하는 도심 속 건물에서 청년들끼리 자유롭게 한달 가량 창업해서 운영해 볼 수 있는 기회!",
         "imgUrl": "https://cdn.pixabay.com/photo/2016/02/19/11/40/coffee-shop-1209863_960_720.jpg",
         "applicantCount": 25,
-        "max": 30,
+        "applicantMaxCount": 30,
         "deadlineDate": "2021-08-30",
-        "keyword": [
+        "keywords": [
             "창업"
         ],
         "location": {
@@ -138,9 +138,9 @@
             "https://cdn.pixabay.com/photo/2015/03/17/09/26/suites-677383_960_720.jpg"
         ],
         "applicantCount": 10,
-        "max": 25,
+        "applicantMaxCount": 25,
         "deadlineDate": "2022-03-31",
-        "keyword": [
+        "keywords": [
             "힐링",
             "농사",
             "취미"
@@ -158,9 +158,9 @@
         "description": "한적한 바닷가 마을에서 아무것도 하지 않고 힐링하기.",
         "imgUrl": "https://images.unsplash.com/photo-1601562219441-29e53a4d4d8f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTI4fHxiZWFjaCUyMGNpdHl8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
         "applicantCount": 25,
-        "max": 30,
+        "applicantMaxCount": 30,
         "deadlineDate": "2021-09-20",
-        "keyword": [
+        "keywords": [
             "힐링"
         ],
         "location": {
@@ -176,9 +176,9 @@
         "description": "한옥마을 거리에서 나와 비슷한 음악가들과 한달간 삶을 공유하며 음악하고 버스킹하는 유유자적 라이프를 즐겨 보세요.",
         "imgUrl": "https://images.unsplash.com/photo-1611351834491-51d1a9f93973?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTg3fHxrb3JlYXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
         "applicantCount": 2,
-        "max": 7,
+        "applicantMaxCount": 7,
         "deadlineDate": "2021-09-20",
-        "keyword": [
+        "keywords": [
             "예술",
             "취미"
         ],
@@ -195,9 +195,9 @@
         "description": "시골 마을에서 세 달 정도 같이 살면서 동네 어르신들 일손도 돕고 말벗도 하는 프로젝트입니다.",
         "imgUrl": "https://cdn.pixabay.com/photo/2020/11/14/12/06/farmer-5741416_960_720.jpg",
         "applicantCount": 5,
-        "max": 30,
+        "applicantMaxCount": 30,
         "deadlineDate": "2021-08-30",
-        "keyword": [
+        "keywords": [
             "봉사",
             "농사"
         ],
@@ -209,9 +209,9 @@
         "description": "2주정도 호남지역 도로를 돌면서 바이크 같이 타고 정보 공유하실 분 구합니다!",
         "imgUrl": "https://cdn.pixabay.com/photo/2019/05/08/01/52/motorcycle-4187586_960_720.jpg",
         "applicantCount": 1,
-        "max": 4,
+        "applicantMaxCount": 4,
         "deadlineDate": "2021-08-21",
-        "keyword": [
+        "keywords": [
             "취미"
         ],
         "startDate": "2021-08-30",
@@ -222,9 +222,9 @@
         "description": "바닷가에서 낚시하고 같이 요리하는 소소한 일상 같이 즐겨요.",
         "imgUrl": "https://images.unsplash.com/photo-1515631604561-23e0be68ee06?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGZpc2hpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
         "applicantCount": 5,
-        "max": 6,
+        "applicantMaxCount": 6,
         "deadlineDate": "2021-08-30",
-        "keyword": [
+        "keywords": [
             "힐링",
             "취미"
         ],
@@ -236,9 +236,9 @@
         "description": "낙후된 지역에 벽화를 그려서 아름답게 재탄생시키는 봉사 모임입니다. 그림 못 그리는 분도 환영",
         "imgUrl": "https://images.unsplash.com/photo-1567619435005-4d3be491538d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTB8fG11cmFsfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
         "applicantCount": 20,
-        "max": 25,
+        "applicantMaxCount": 25,
         "deadlineDate": "2021-10-05",
-        "keyword": [
+        "keywords": [
             "봉사",
             "예술"
         ],
@@ -252,9 +252,9 @@
             "https://images.unsplash.com/photo-1594609022510-8f6da1e26101?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzIwfHxrb3JlYXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
         ],
         "applicantCount": 4,
-        "max": 10,
+        "applicantMaxCount": 10,
         "deadlineDate": "2021-11-30",
-        "keyword": [
+        "keywords": [
             "힐링",
             "취미"
         ],
@@ -266,9 +266,9 @@
         "description": "평생학습센터에서 노인분들 대상으로 교육봉사 하실 분을 구합니다",
         "imgUrl": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80",
         "applicantCount": 9,
-        "max": 10,
+        "applicantMaxCount": 10,
         "deadlineDate": "2021-10-20",
-        "keyword": [
+        "keywords": [
             "봉사",
             "교육"
         ],
@@ -280,9 +280,9 @@
         "description": "해양 쓰레기 줍기 봉사단을 꾸리는 중입니다.",
         "imgUrl": "https://images.unsplash.com/photo-1565879422384-053cc91c8b8b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
         "applicantCount": 27,
-        "max": 40,
+        "applicantMaxCount": 40,
         "deadlineDate": "2021-08-30",
-        "keyword": [
+        "keywords": [
             "봉사"
         ],
         "startDate": "2021-9-10",
@@ -293,9 +293,9 @@
         "description": "호남 곳곳을 돌아다니며 사진 스팟을 찾고 이런저런 사진도 찍어요!",
         "imgUrl": "https://images.unsplash.com/photo-1452780212940-6f5c0d14d848?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80",
         "applicantCount": 2,
-        "max": 4,
+        "applicantMaxCount": 4,
         "deadlineDate": "2021-08-23",
-        "keyword": [
+        "keywords": [
             "취미",
             "힐링"
         ],
@@ -307,9 +307,9 @@
         "description": "핸드폰 없이 아날로그 감성으로 살아보기.",
         "imgUrl": "https://images.unsplash.com/photo-1615964474833-d2d2781aa71d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80",
         "applicantCount": 8,
-        "max": 10,
+        "applicantMaxCount": 10,
         "deadlineDate": "2021-08-30",
-        "keyword": [
+        "keywords": [
             "힐링"
         ],
         "startDate": "2021-09-01",
@@ -320,9 +320,9 @@
         "description": "로망이었던 텃밭 라이프, 같이 실현해요!",
         "imgUrl": "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
         "applicantCount": 3,
-        "max": 10,
+        "applicantMaxCount": 10,
         "deadlineDate": "2021-11-01",
-        "keyword": [
+        "keywords": [
             "농사",
             "힐링",
             "체험"

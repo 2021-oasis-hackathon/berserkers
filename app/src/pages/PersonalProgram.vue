@@ -79,7 +79,7 @@
         </div>
         <div class="flex flex-wrap">
           <!-- TODO: 아 인덱스로 키 잡으면 안되는데 시간없다 -->
-          <div v-for="(item, index) in personalPrograms" :key="index" class="mt-4 mb-4 px-2 lg:w-3/12 md:w-4/12 sm:w-6/12" >
+          <div v-for="(item, index) in filterByKeyword('취미')" :key="index" class="mt-4 mb-4 px-2 lg:w-3/12 md:w-4/12 sm:w-6/12" >
             <personal-program-card :item="item" />
           </div>
         </div>
@@ -92,7 +92,7 @@
         </div>
         <div class="flex flex-wrap">
           <!-- TODO: 아 인덱스로 키 잡으면 안되는데 시간없다 -->
-          <div v-for="(item, index) in personalPrograms" :key="index" class="mt-4 mb-4 px-2 lg:w-3/12 md:w-4/12 sm:w-6/12" >
+          <div v-for="(item, index) in filterByKeyword('힐링')" :key="index" class="mt-4 mb-4 px-2 lg:w-3/12 md:w-4/12 sm:w-6/12" >
             <personal-program-card :item="item" />
           </div>
         </div>
@@ -106,7 +106,7 @@
         </div>
         <div class="flex flex-wrap">
           <!-- TODO: 아 인덱스로 키 잡으면 안되는데 시간없다 -->
-          <div v-for="(item, index) in personalPrograms" :key="index" class="mt-4 mb-4 px-2 lg:w-3/12 md:w-4/12 sm:w-6/12" >
+          <div v-for="(item, index) in filterByKeyword('봉사')" :key="index" class="mt-4 mb-4 px-2 lg:w-3/12 md:w-4/12 sm:w-6/12" >
             <personal-program-card :item="item" />
           </div>
         </div>
@@ -133,7 +133,6 @@ export default {
     const { type } = useViewport();
 
     const personalPrograms = ref([]);
-    const localCommunityPrograms = ref([]);
 
     const carouselSize = computed(() => {
       switch (type.value) {
@@ -148,6 +147,9 @@ export default {
       }
     });
 
+    const filterByKeyword = keyword =>
+      personalPrograms.value.filter((e) => e.keywords.find((k) => k === keyword ) !== undefined);
+
     onMounted(async () => {
       const _personalPrograms = await getAllPersonalProgram();
       personalPrograms.value = _personalPrograms;
@@ -158,6 +160,7 @@ export default {
       bannerImg,
       componentBtn,
       carouselSize,
+      filterByKeyword
     };
   },
   components: {

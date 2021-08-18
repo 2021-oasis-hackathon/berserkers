@@ -72,30 +72,16 @@
         <div class="flex flex-wrap justify-flex-start mb-2">
           <div class="w-full flex flex-row justify-between items-end px-4">
             <h2 class="text-3xl font-semibold text-nowrap">
-              바닷가 마을로 오세요
+              청년 예술하다
             </h2>
           </div>
         </div>
         <div class="flex flex-wrap">
           <!-- TODO: 아 인덱스로 키 잡으면 안되는데 시간없다 -->
-          <div v-for="(item, index) in localCommunityPrograms" :key="index" class="mt-4 mb-4 px-2 lg:w-3/12 md:w-4/12 sm:w-6/12" >
+          <div v-for="(item, index) in filterByKeyword('예술')" :key="index" class="mt-4 mb-4 px-2 lg:w-3/12 md:w-4/12 sm:w-6/12" >
             <local-community-program-card :item="item" />
           </div>
         </div>
-        <div class="flex flex-wrap justify-flex-start mt-12 mb-2">
-          <div class="w-full flex flex-row justify-between items-end px-4">
-            <h2 class="text-3xl font-semibold text-nowrap">
-              전남은 예술이랑께
-            </h2>
-          </div>
-        </div>
-        <div class="flex flex-wrap">
-          <!-- TODO: 아 인덱스로 키 잡으면 안되는데 시간없다 -->
-          <div v-for="(item, index) in localCommunityPrograms" :key="index" class="mt-4 mb-4 px-2 lg:w-3/12 md:w-4/12 sm:w-6/12" >
-            <local-community-program-card :item="item" />
-          </div>
-        </div>
-
         <div class="flex flex-wrap justify-flex-start mt-12 mb-2">
           <div class="w-full flex flex-row justify-between items-end px-4">
             <h2 class="text-3xl font-semibold text-nowrap">
@@ -105,7 +91,21 @@
         </div>
         <div class="flex flex-wrap">
           <!-- TODO: 아 인덱스로 키 잡으면 안되는데 시간없다 -->
-          <div v-for="(item, index) in localCommunityPrograms" :key="index" class="mt-4 mb-4 px-2 lg:w-3/12 md:w-4/12 sm:w-6/12" >
+          <div v-for="(item, index) in filterByKeyword('힐링')" :key="index" class="mt-4 mb-4 px-2 lg:w-3/12 md:w-4/12 sm:w-6/12" >
+            <local-community-program-card :item="item" />
+          </div>
+        </div>
+
+        <div class="flex flex-wrap justify-flex-start mt-12 mb-2">
+          <div class="w-full flex flex-row justify-between items-end px-4">
+            <h2 class="text-3xl font-semibold text-nowrap">
+              체험하고 창업하고
+            </h2>
+          </div>
+        </div>
+        <div class="flex flex-wrap">
+          <!-- TODO: 아 인덱스로 키 잡으면 안되는데 시간없다 -->
+          <div v-for="(item, index) in filterByKeyword('창업')" :key="index" class="mt-4 mb-4 px-2 lg:w-3/12 md:w-4/12 sm:w-6/12" >
             <local-community-program-card :item="item" />
           </div>
         </div>
@@ -146,6 +146,10 @@ export default {
       }
     });
 
+    const filterByKeyword = keyword =>
+      localCommunityPrograms.value.filter((e) => e.keywords.find((k) => k === keyword ) !== undefined);
+
+
     onMounted(async () => {
       const _localCommunityPrograms = await getAllLocalCommunityProgram();
       localCommunityPrograms.value = _localCommunityPrograms;
@@ -156,6 +160,7 @@ export default {
       bannerImg,
       componentBtn,
       carouselSize,
+      filterByKeyword
     };
   },
   components: {
