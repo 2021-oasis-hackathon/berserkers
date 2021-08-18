@@ -32,7 +32,6 @@
             leading-normal
             mb-2
             text-blueGray-700
-            mb-2
           "
         >
           예술, 오 비엔날레

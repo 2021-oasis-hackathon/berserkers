@@ -32,7 +32,6 @@
             leading-normal
             mb-2
             text-blueGray-700
-            mb-2
           "
         >
           벽에 따뜻한 마음을 그려요
