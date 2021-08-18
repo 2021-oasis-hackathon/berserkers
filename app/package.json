@@ -16,7 +16,9 @@
     "firebase": "^8.9.1",
     "tailwindcss": "^2.2.7",
     "vue": "^3.0.5",
-    "vue-router": "4.0.5"
+    "vue-moment": "^4.1.0",
+    "vue-router": "4.0.5",
+    "vue3-carousel": "^0.1.25"
   },
   "devDependencies": {
     "@types/node": "^16.6.1",
