@@ -1,0 +1,11 @@
+<h2> 모임 생성하기 (5) </h2>
+모임 생성하기 페이지
+
+<form action="{% url 'honameuro:indiv_submit' %}" method="post">
+    {% csrf_token %}
+    <div>
+        <textarea placeholder="제목" name="title" id="title" rows="1"></textarea>
+    </div>
+    <textarea placeholder="내용" name="content" id="content" rows="15"></textarea>
+    <input type="submit" value="생성">
+</form>
