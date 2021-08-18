@@ -1,0 +1,14 @@
+<h2> 마을 구경하기(6) </h2>
+마을 소개 페이지입니다
+
+<ol>
+    {% for village in village_list %}
+    <li><h3>{{ village.title }}</h3></li>
+    <div>
+        {{ village.content }}
+        <a href="{% url 'honameuro:apply' village.id %}">신청하기</a>
+        (최대 {{ village.max }}명 중에 {{ village.selected }}명이 신청중)
+    </div>
+
+    {% endfor %}
+</ol>
