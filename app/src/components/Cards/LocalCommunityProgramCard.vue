@@ -36,7 +36,7 @@
               {{ data.endDate }}
             </div>
             <div class="text-xs mb-2">
-              <span class="font-bold">신청기간:</span> {{ data.deadlineDate }}
+              <span class="font-bold">신청기간:</span> ~ {{ data.deadlineDate }}
               <span class="text-red-500 font-bold">({{data.applicationPeriod}}일 후 마감)</span>
             </div>
             <div class="text-xs">
