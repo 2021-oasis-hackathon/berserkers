@@ -107,7 +107,7 @@
           <div class="flex flex-wrap">
             <carousel
               class="w-full px-6 py-2"
-              :itemsToShow="4"
+              :itemsToShow="carouselSize"
               :snapAlign="'end'"
               :items="localCommunityPrograms"
             >

@@ -20,11 +20,11 @@
       />
       <div class="flex flex-col flex-1 flex-wrap">
         <div class="flex flex-1 flex-col px-3 my-2">
-          <div id="title" class="font-bold text-emerald-600 text-xs">
+          <div class="font-bold text-emerald-600 text-xs mb-1">
             <i class="fas fa-map-marker-alt"></i>
             {{ data.location.region }}
           </div>
-          <div class="font-bold text-2xs mb-1">{{ data.title }}</div>
+          <div id="title" class="font-bold text-2xs mb-1">{{ data.title }}</div>
           <p id="description" class="text-gray-700 text-xs">
             {{ data.description }}
           </p>
