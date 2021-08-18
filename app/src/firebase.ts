@@ -1,6 +1,8 @@
 import firebase from "firebase";
-import { disconnect } from "process";
+
 import { ref, onUnmounted } from "vue";
+
+import moment from 'moment';
 
 /* code from our Firebase console */
 const config = {
@@ -66,8 +68,12 @@ export const getPersonalProgram = async (id: string) => {
 };
 
 export const getAllPersonalProgram = async () => {
-    const program = await personalProgramsCollection.get();
-    return program.empty ? [] : program.docs.map(doc => { return {id: doc.id, ...doc.data()}});
+  const program = await personalProgramsCollection.get();
+  return program.empty
+    ? []
+    : program.docs.map((doc) => {
+        return { id: doc.id, ...doc.data() };
+      });
 };
 
 export const updatePersonalProgram = (id: string, program: any) => {
@@ -81,3 +87,34 @@ export const deletePersonalProgram = (id: string) => {
 /*
  * local-community-programs collection handling
  */
+export const createLocalCommunityProgram = (program: any) => {
+  return localCommunityProgramsCollection.add(program);
+};
+
+export const getLocalCommunityProgram = async (id: string) => {
+  const program = await localCommunityProgramsCollection.doc(id).get();
+  return program.exists ? program.data() : null;
+};
+
+export const getAllLocalCommunityProgram = async () => {
+  const program = await localCommunityProgramsCollection.get();
+  return program.empty
+    ? []
+    : program.docs.map((doc) => {
+        return { id: doc.id, ...doc.data() };
+      });
+};
+
+export const updateLocalCommunityProgram = (id: string, program: any) => {
+  return localCommunityProgramsCollection.doc(id).update(program);
+};
+
+export const deleteLocalCommunityProgram = (id: string) => {
+  return localCommunityProgramsCollection.doc(id).delete();
+};
+
+/*
+ * utility methods
+ */ 
+export const getTimestamp = (date: any, format: string) =>
+  firebase.firestore.Timestamp.fromDate(moment(date, format).toDate());
