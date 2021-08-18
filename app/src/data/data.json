@@ -65,7 +65,8 @@
         "max": 20,
         "deadlineDate": "2021-11-01",
         "keyword": [
-            "예술"
+            "체험",
+            "농사"
         ],
         "location": {
             "latitude": 30,
@@ -101,7 +102,8 @@
         "max": 3,
         "deadlineDate": "2021-08-30",
         "keyword": [
-            "예술"
+            "예술",
+            "체험"
         ],
         "location": {
             "latitude": 30,
