@@ -74,11 +74,12 @@
 
       <section class="pt-20 pb-48">
         <div class="container mx-auto px-4">
-          <div class="flex flex-wrap justify-flex-start mb-8">
-            <div class="w-full lg:w-6/12 px-4">
+          <div class="flex flex-wrap justify-flex-start mb-2">
+            <div class="w-full flex flex-row justify-between items-end px-4">
               <h2 class="text-3xl font-semibold text-nowrap">
                 사람들과 모여 한달살이 기획
               </h2>
+              <a href="/personal-programs" class="font-bold text-gray-700 text-sm">더 알아보기</a>
             </div>
           </div>
           <div class="flex flex-wrap">
@@ -97,9 +98,10 @@
           </div>
         </div>
         <div class="container mx-auto px-4 pt-20">
-          <div class="flex flex-wrap justify-flex-start mb-8">
-            <div class="w-full lg:w-6/12 px-4">
-              <h2 class="text-3xl font-semibold">지역 공동체 프로그램</h2>
+          <div class="flex flex-wrap justify-flex-start mb-2">
+            <div class="w-full flex flex-row justify-between items-end px-4">
+              <h2 class="text-3xl font-semibold">지역 공동체가 제공하는 프로그램들</h2>
+              <a href="/local-community-programs" class="font-bold text-gray-700 text-sm">더 알아보기</a>
             </div>
           </div>
           <div class="flex flex-wrap">
