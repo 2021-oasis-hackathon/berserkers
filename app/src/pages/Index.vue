@@ -84,7 +84,7 @@
           <div class="flex flex-wrap">
             <carousel
               class="w-full px-6 py-2"
-              :itemsToShow="4"
+              :itemsToShow="carouselSize"
               :snapAlign="'end'"
               :items="personalPrograms"
             >
@@ -107,7 +107,7 @@
               class="w-full px-6 py-2"
               :itemsToShow="4"
               :snapAlign="'end'"
-              :items="personalPrograms"
+              :items="localCommunityPrograms"
             >
               <template v-slot:default="slotProps">
                 <div class="mt-4 mb-4 px-2">
@@ -247,8 +247,8 @@
   </div>
 </template>
 <script>
-import { reactive, ref, onMounted } from "vue";
-import { getAllPersonalProgram } from "@/firebase";
+import { computed, ref, onMounted } from "vue";
+import { getAllPersonalProgram, getAllLocalCommunityProgram } from "@/firebase";
 
 import Navbar from "@/components/Navbars/NavBar.vue";
 import FooterComponent from "@components/Footers/Footer.vue";
@@ -259,16 +259,33 @@ import LocalCommunityProgramCard from "@components/Cards/LocalCommunityProgramCa
 import bannerImg from "@assets/images/banner004.jpg";
 import componentBtn from "@assets/img/component-btn.png";
 
+import useViewport from "@/hooks/useViewport.ts";
+
 export default {
   setup() {
-    const personalPrograms = ref([]);
+    const { type } = useViewport();
 
-    onMounted(async () => {
-      const programs = await getAllPersonalProgram();
-      personalPrograms.value = programs;
+    const personalPrograms = ref([]);
+    const localCommunityPrograms = ref([]);
+
+    const carouselSize = computed(() => {
+              console.log(type.value);
+      switch(type.value) {
+        case 'xs': return 1;
+        case 'sm': return 2;
+        case 'md': return 3;
+        case 'lg': return 4;
+      }
     });
 
-    return { personalPrograms, bannerImg, componentBtn };
+    onMounted(async () => {
+      const _personalPrograms = await getAllPersonalProgram();
+      const _localCommunityPrograms = await getAllLocalCommunityProgram();
+      personalPrograms.value = _personalPrograms;
+      localCommunityPrograms.value = _localCommunityPrograms;
+    });
+
+    return { personalPrograms, localCommunityPrograms, bannerImg, componentBtn, carouselSize };
   },
   components: {
     Navbar,
