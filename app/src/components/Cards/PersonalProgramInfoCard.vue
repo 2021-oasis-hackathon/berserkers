@@ -131,7 +131,7 @@
           type="button"
           @click="onSubmitApplication"
         >
-          신청하기 - 일부 유료
+          신청하기 - 신청 시 이메일로 연락
         </button>
       </div>
       <div class="mt-10 py-10 border-t border-blueGray-200 text-center">
