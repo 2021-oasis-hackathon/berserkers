@@ -1,5 +1,81 @@
 [
     {
+        "title": "게스트하우스 호스트 맛보기",
+        "description": "한달동안 바닷가 게스트하우스를 운영해보세요!",
+        "imgUrl": "https://images.unsplash.com/photo-1546661087-32e241801496?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80",
+        "applicantCount": 0,
+        "max": 2,
+        "deadlineDate": "2021-09-30",
+        "keyword": [
+            "힐링",
+            "창업",
+            "체험"
+        ],
+        "location": {
+            "latitude": 30,
+            "longitude": 50,
+            "region": "전남 목포시"
+        },
+        "startDate": "2021-11-01",
+        "endDate": "2021-11-30"
+    },
+    {
+        "title": "대나무와 차의 향기",
+        "description": "선비들이 좋아했던 대나무와 차를 즐기며 선비의 삶을 체험해보세요.",
+        "imgUrl": "https://images.unsplash.com/photo-1620870300436-a70b605f6ebe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+        "applicantCount": 3,
+        "max": 10,
+        "deadlineDate": "2021-8-22",
+        "keyword": [
+            "힐링",
+            "체험"
+        ],
+        "location": {
+            "latitude": 30,
+            "longitude": 50,
+            "region": "전남 담양시"
+        },
+        "startDate": "2021-09-01",
+        "endDate": "2021-09-20"
+    },
+    {
+        "title": "근대화 큐레이터",
+        "description": "군산 근대화 거리에서 큐레이터로 일하며 관광객들과 소통해볼 수 있는 기회!",
+        "imgUrl": "https://images.unsplash.com/photo-1574338902008-c85b9047e7d5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+        "applicantCount": 2,
+        "max": 3,
+        "deadlineDate": "2021-08-30",
+        "keyword": [
+            "체험",
+            "창업"
+        ],
+        "location": {
+            "latitude": 30,
+            "longitude": 50,
+            "region": "전북 군산시"
+        },
+        "startDate": "2021-10-01",
+        "endDate": "2021-10-16"
+    },
+    {
+        "title": "청년, 귀농하다",
+        "description": "청년 농부가 되어 직접 농작물 키워보며 귀농 라이프 즐기기.",
+        "imgUrl": "https://images.unsplash.com/photo-1537721664796-76f77222a5d0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+        "applicantCount": 8,
+        "max": 20,
+        "deadlineDate": "2021-11-01",
+        "keyword": [
+            "예술"
+        ],
+        "location": {
+            "latitude": 30,
+            "longitude": 50,
+            "region": "전남 장성시"
+        },
+        "startDate": "2021-12-1",
+        "endDate": "2022-11-30"
+    },
+    {
         "title": "예술, 오 비엔날레",
         "description": "디자인을 좋아하는 사람들과 작업실 공유, 스터디 조직 및 전시 관람을 해 보세요!",
         "imgUrl": "https://images.unsplash.com/photo-1501366062246-723b4d3e4eb6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1073&q=80",
@@ -16,6 +92,24 @@
         },
         "startDate": "2021-10-01",
         "endDate": "2021-10-30"
+    },
+    {
+        "title": "과학을 좋아하나요?",
+        "description": "광주과학관에서 열 과학 전시회를 기획해 보세요",
+        "imgUrl": "https://images.unsplash.com/photo-1567427018141-0584cfcbf1b8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+        "applicantCount": 2,
+        "max": 3,
+        "deadlineDate": "2021-08-30",
+        "keyword": [
+            "예술"
+        ],
+        "location": {
+            "latitude": 30,
+            "longitude": 50,
+            "region": "광주광역시"
+        },
+        "startDate": "2021-11-01",
+        "endDate": "2021-11-30"
     },
     {
         "title": "도전! 한달 창업",
@@ -164,5 +258,74 @@
         ],
         "startDate": "2021-12-01",
         "endDate": "2021-01-30"
+    },
+    {
+        "title": "노인을 위한 학교는 있다",
+        "description": "평생학습센터에서 노인분들 대상으로 교육봉사 하실 분을 구합니다",
+        "imgUrl": "https://images.unsplash.com/photo-1580582932707-520aed937b7b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80",
+        "applicantCount": 9,
+        "max": 10,
+        "deadlineDate": "2021-10-20",
+        "keyword": [
+            "봉사",
+            "교육"
+        ],
+        "startDate": "2021-11-01",
+        "endDate": "2022-03-31"
+    },
+    {
+        "title": "쓰줍하실래요?",
+        "description": "해양 쓰레기 줍기 봉사단을 꾸리는 중입니다.",
+        "imgUrl": "https://images.unsplash.com/photo-1565879422384-053cc91c8b8b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+        "applicantCount": 27,
+        "max": 40,
+        "deadlineDate": "2021-08-30",
+        "keyword": [
+            "봉사"
+        ],
+        "startDate": "2021-9-10",
+        "endDate": "2021-9-30"
+    },
+    {
+        "title": "사진으로 남긴 추억",
+        "description": "호남 곳곳을 돌아다니며 사진 스팟을 찾고 이런저런 사진도 찍어요!",
+        "imgUrl": "https://images.unsplash.com/photo-1452780212940-6f5c0d14d848?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80",
+        "applicantCount": 2,
+        "max": 4,
+        "deadlineDate": "2021-08-23",
+        "keyword": [
+            "취미",
+            "힐링"
+        ],
+        "startDate": "2021-09-01",
+        "endDate": "2021-10-31"
+    },
+    {
+        "title": "아날로그 라이프",
+        "description": "핸드폰 없이 아날로그 감성으로 살아보기.",
+        "imgUrl": "https://images.unsplash.com/photo-1615964474833-d2d2781aa71d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80",
+        "applicantCount": 8,
+        "max": 10,
+        "deadlineDate": "2021-08-30",
+        "keyword": [
+            "힐링"
+        ],
+        "startDate": "2021-09-01",
+        "endDate": "2021-09-30"
+    },
+    {
+        "title": "나만의 텃밭 가꾸기",
+        "description": "로망이었던 텃밭 라이프, 같이 실현해요!",
+        "imgUrl": "https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80",
+        "applicantCount": 3,
+        "max": 10,
+        "deadlineDate": "2021-11-01",
+        "keyword": [
+            "농사",
+            "힐링",
+            "체험"
+        ],
+        "startDate": "2021-12-01",
+        "endDate": "2022-11-30"
     }
 ]
