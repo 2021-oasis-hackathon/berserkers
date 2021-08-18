@@ -79,7 +79,12 @@
               <h2 class="text-3xl font-semibold text-nowrap">
                 사람들과 모여 한달살이 기획
               </h2>
-              <a href="/personal-programs" class="font-bold text-gray-700 text-sm">더 알아보기</a>
+              <a
+                href="/personal-programs"
+                class="font-bold text-gray-700 text-sm"
+              >
+                더 알아보기
+              </a>
             </div>
           </div>
           <div class="flex flex-wrap">
@@ -100,8 +105,15 @@
         <div class="container mx-auto px-4 pt-20">
           <div class="flex flex-wrap justify-flex-start mb-2">
             <div class="w-full flex flex-row justify-between items-end px-4">
-              <h2 class="text-3xl font-semibold">지역 공동체가 제공하는 프로그램들</h2>
-              <a href="/local-community-programs" class="font-bold text-gray-700 text-sm">더 알아보기</a>
+              <h2 class="text-3xl font-semibold">
+                지역 공동체가 제공하는 프로그램들
+              </h2>
+              <a
+                href="/local-community-programs"
+                class="font-bold text-gray-700 text-sm"
+              >
+                더 알아보기
+              </a>
             </div>
           </div>
           <div class="flex flex-wrap">
@@ -271,12 +283,15 @@ export default {
     const localCommunityPrograms = ref([]);
 
     const carouselSize = computed(() => {
-              console.log(type.value);
-      switch(type.value) {
-        case 'xs': return 1;
-        case 'sm': return 2;
-        case 'md': return 3;
-        case 'lg': return 4;
+      switch (type.value) {
+        case "xs":
+          return 1;
+        case "sm":
+          return 2;
+        case "md":
+          return 3;
+        case "lg":
+          return 4;
       }
     });
 
@@ -287,7 +302,13 @@ export default {
       localCommunityPrograms.value = _localCommunityPrograms;
     });
 
-    return { personalPrograms, localCommunityPrograms, bannerImg, componentBtn, carouselSize };
+    return {
+      personalPrograms,
+      localCommunityPrograms,
+      bannerImg,
+      componentBtn,
+      carouselSize,
+    };
   },
   components: {
     Navbar,

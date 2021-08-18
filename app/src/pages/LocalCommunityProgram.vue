@@ -67,6 +67,7 @@
       />
     </section>
   </main>
+  <footer-component />
 </template>
 <script>
 import Navbar from "@/components/Navbars/NavBar.vue";
