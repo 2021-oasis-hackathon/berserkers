@@ -1,19 +1,70 @@
 <template>
   <navbar content />
-  <main>
-
+  <main class="mt-20">
+    <div
+      class="
+        relative
+        pt-16
+        pb-16
+        flex
+        content-center
+        items-center
+        justify-center
+        min-h-screen-15
+      "
+    >
+      <div
+        class="absolute top-0 w-full h-full bg-center bg-no-repeat bg-cover"
+        style="
+          background-image: url('https://images.unsplash.com/photo-1501366062246-723b4d3e4eb6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=180');
+          background-color: #feead2;
+        "
+      >
+        <span
+          id="blackOverlay"
+          class="w-full h-full absolute bg-black opacity-75"
+        ></span>
+      </div>
+      <div class="container relative mx-auto mt-10">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full lg:w-5/12 px-4 ml-auto mr-auto text-center">
+            <div class="pr-12">
+              <h1 class="text-blueGray-200 font-semibold text-4xl">
+                예술, 오 비엔날레
+              </h1>
+              <p class="mt-4 mb-5 text-lg text-blueGray-300">
+                광주광역시 지역 공동체 프로그램
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-wrap pt-12 pb-40 container mx-auto">
+      <div class="w-full lg:w-8/12 px-4">
+        <LocalCommunityProgramContentCard />
+      </div>
+      <div class="w-full lg:w-4/12 px-4">
+        <LocalCommunityProgramInfoCard />
+      </div>
+    </div>
   </main>
   <footer-component />
 </template>
+
 <script>
+import { ref } from "vue";
+
 import Navbar from "@/components/Navbars/NavBar.vue";
 import FooterComponent from "@components/Footers/Footer.vue";
+import LocalCommunityProgramContentCard from "@/components/Cards/LocalCommunityProgramContentCard.vue";
+import LocalCommunityProgramInfoCard from "@/components/Cards/LocalCommunityProgramInfoCard.vue";
 
 import bannerImg from "@assets/images/banner002.jpg";
 import componentBtn from "@assets/img/component-btn.png";
 
 export default {
-  data() {
+  setup() {
     return {
       bannerImg,
       componentBtn,
@@ -22,6 +73,8 @@ export default {
   components: {
     Navbar,
     FooterComponent,
+    LocalCommunityProgramContentCard,
+    LocalCommunityProgramInfoCard,
   },
 };
 </script>
