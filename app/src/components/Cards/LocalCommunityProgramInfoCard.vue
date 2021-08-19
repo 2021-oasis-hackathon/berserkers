@@ -10,7 +10,6 @@
       mb-6
       shadow-2xl
       rounded-lg
-      mt-16
     "
   >
     <div class="px-6">

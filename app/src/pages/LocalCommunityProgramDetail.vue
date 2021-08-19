@@ -47,13 +47,16 @@
       <div class="w-full lg:w-4/12 px-4">
         <LocalCommunityProgramInfoCard />
       </div>
+      <div class="container flex items-center mt-12 pb-24 px-4">
+        <div id="disqus_thread" class="w-full"></div>
+      </div>
     </div>
   </main>
   <footer-component />
 </template>
 
 <script>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 
 import Navbar from "@/components/Navbars/NavBar.vue";
 import FooterComponent from "@components/Footers/Footer.vue";
@@ -65,6 +68,20 @@ import componentBtn from "@assets/img/component-btn.png";
 
 export default {
   setup() {
+    const disqus_config = function () {
+      this.page.url = 'http://203.254.143.193:3000/local-community-programs/test';  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = 'local-community-programs/test'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    
+    (function () {
+      // DON'T EDIT BELOW THIS LINE
+      var d = document,
+        s = d.createElement("script");
+      s.src = "https://honameuro.disqus.com/embed.js";
+      s.setAttribute("data-timestamp", +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+
     return {
       bannerImg,
       componentBtn,
